@@ -30,7 +30,7 @@
                 >
                     <td>
                         <v-avatar
-                            :color="salarie['genre'] === 'Homme' ? 'indigo-darken-2' : 'pink-darken-2'"
+                            :color="salarie['genre'] === 'Male' ? 'indigo-darken-2' : salarie['genre'] === 'Female' ? 'pink-darken-2' : 'purple-darken-2'"
                             size="small"
                         >
                             <span class="text-h7">
